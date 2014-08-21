@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edesur Dominicana</title>
+    <title>Recuperar Clave |  Oficina Virtual | Edesur Dominicana</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="stylesheets/app.css" />
@@ -13,63 +13,88 @@
   <body>
 
     <div class="es-site-nav-top-wrapper contain-to-grid fixed columns">
-      <nav class="es-site-nav-top top-bar" data-topbar>
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="index.html" title="Edesur Dominicana">Edesur Dominicana</a></h1>
-          </li>
-           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
+          <nav class="es-site-nav-top top-bar" data-topbar>
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="index.html" title="Edesur Dominicana">Edesur Dominicana</a></h1>
+              </li>
+               <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
 
-        <section class="top-bar-section">
-          <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="has-dropdown">
-              <a href="#">Servicios</a>
-              <ul class="dropdown">
-                <li><a href="#">Servicio al Cliente</a></li>
-                <li><a href="ov.html">Servicios en Linea</a></li>
-                <li><a href="#">Puntos de pago</a></li>
+            <section class="top-bar-section">
+              <!-- Right Nav Section -->
+              <ul class="right">
+                <li class="has-dropdown">
+                  <a href="#">Servicios</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Servicio al Cliente</a></li>
+                    <li><a href="ov.html">Servicios en Linea</a></li>
+                    <li><a href="#">Puntos de pago</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Transparencia</a></li>
+                <li><a href="#">Preguntas</a></li>
+                <li><a href="#">Empresa</a></li>
+                <li class="es-site-nav-search-wrapper has-form">
+                  <div class="es-site-nav-search row collapse">
+                    <div class="es-site-nav-search-input large-9 small-9 columns">
+                      <input class="right" type="text" placeholder="Buscar en Edesur">
+                    </div>
+                    <div class="large-3 small-3 columns">
+                      <a href="#" class="button expand">
+                        <i class="step fi-magnifying-glass size-72"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                  <div class="addthis_horizontal_follow_toolbox"></div>
+                </li>
               </ul>
-            </li>
-            <li><a href="#">Transparencia</a></li>
-            <li><a href="#">Preguntas</a></li>
-            <li><a href="#">Empresa</a></li>
-            <li class="es-site-nav-search-wrapper has-form">
-              <div class="es-site-nav-search row collapse">
-                <div class="es-site-nav-search-input large-9 small-9 columns">
-                  <input class="right" type="text" placeholder="Buscar en Edesur">
-                </div>
-                <div class="large-3 small-3 columns">
-                  <a href="#" class="button expand">
-                    <i class="step fi-magnifying-glass size-72"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <!-- Go to www.addthis.com/dashboard to customize your tools -->
-              <div class="addthis_horizontal_follow_toolbox"></div>
-            </li>
-          </ul>
-        </section>
-      </nav>
-    </div>
+            </section>
+          </nav>
+        </div>
 
     <section class="es-site-masthead small-12 columns">
+      <div class="row collapse">
+        <div class="es-site-masthead-title small-12 columns">
+          <h2>Oficina Virtual</h2>
+        </div>
+      </div>
 
       <div class="row">
-        <div class="es-site-masthead-title small-6 columns">
-          <h2>Vive la experiencia</h2>
+        <div class="es-site-masthead-form small-12 columns">
+          <div class="row">
+            <div class="es-site-masthead-form-title small-12 columns">
+              <h3>Recuperar clave olvidada</h3>
+              <p>Para recuperar su clave de acceso a la oficina virtual de Edesur, por favor ingrese su cuenta de correo electrónico debajo:</p>
+            </div>
+          </div>
+          <form action="" data-abide>
             <div class="row">
-              <div class="small-8 columns">
-                <h3 class="subheader">Todos los servicios al alcance de un click</h3>
+              <div class="small-4 columns">
+                <label for="es-site-form-clave-olvidada-correo" >Correo electrónico
+                  <input id="es-site-form-clave-olvidada-correo" type="text" placeholder="Su correo electrónico" required pattern="email" />
+                </label>
+                <small class="error">Correo Electrónico no es valido</small>
               </div>
             </div>
-          <a href="ov.html" class="button">Oficina Virtual</a>
+            <div class="row">
+              <div class="small-4 columns">
+                  <input class="button" type="submit" value="Recuperar Clave" />
+              </div>
+            </div>
+          </form>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <p>Si es su primera visita cree un usuario para utilizar la Oficina Virtual.</p>
+              <p><a href="ov-registro.html">Registrarse</a></p>
+            </div>
+          </div>
         </div>
-        <div class="small-1 columns"></div>
       </div>
 
       <div class="es-site-nav-bar-app-wrapper small-12 columns">
@@ -95,7 +120,7 @@
               <img src="images/es-site-app-icon-interrupciones.png">
               <h5>Interrupciones</h5>
             </a>
-            <a data-tooltip class="item has-tip tip-top" title="Noticias del Sector" href="noticias.html">
+            <a data-tooltip class="item has-tip tip-top" title="Noticias del Sector" href="noticias">
               <img src="images/es-site-app-icon-noticias.png">
               <h5>Noticias</h5>
             </a>
@@ -177,7 +202,7 @@
         </div>
         <div class="small-6 columns">
 
-            <form class="es-site-footer-contact-form" action="">
+            <form class="es-site-footer-contact-form" action="" >
               <div class="row">
                 <div class="es-site-contact-field-box medium-6 columns">
 

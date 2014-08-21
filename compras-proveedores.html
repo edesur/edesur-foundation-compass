@@ -1,0 +1,389 @@
+<!doctype html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Proveedores |  Compras y Contrataciones | Edesur Dominicana</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+  </head>
+  <body>
+
+    <div class="es-site-nav-top-wrapper contain-to-grid fixed columns">
+      <nav class="es-site-nav-top top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="index.html" title="Edesur Dominicana">Edesur Dominicana</a></h1>
+          </li>
+           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li class="has-dropdown">
+              <a href="#">Servicios</a>
+              <ul class="dropdown">
+                <li><a href="#">Servicio al Cliente</a></li>
+                <li><a href="ov.html">Servicios en Linea</a></li>
+                <li><a href="#">Puntos de pago</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Transparencia</a></li>
+            <li><a href="#">Preguntas</a></li>
+            <li><a href="#">Empresa</a></li>
+            <li class="es-site-nav-search-wrapper has-form">
+              <div class="es-site-nav-search row collapse">
+                <div class="es-site-nav-search-input large-9 small-9 columns">
+                  <input class="right" type="text" placeholder="Buscar en Edesur">
+                </div>
+                <div class="large-3 small-3 columns">
+                  <a href="#" class="button expand">
+                    <i class="step fi-magnifying-glass size-72"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <!-- Go to www.addthis.com/dashboard to customize your tools -->
+              <div class="addthis_horizontal_follow_toolbox"></div>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <section class="es-site-masthead small-12 columns">
+      <div class="row collapse">
+        <div class="es-site-masthead-title small-12 columns">
+          <h2>Formulario de Proveedores</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="es-site-masthead-form small-12 columns">
+
+          <!-- <div class="small-12 cloumns">
+            <p>Por favor, complete esta solicitud para recibir el formulario de registro & homologación de proveedores por correo electrónico.</p>
+          </div> -->
+
+          <form action="#" data-abide>
+            <div class="row">
+              <fieldset class="small-4 columns">
+                <legend>Datos personales</legend>
+
+                <div class="row">
+                  <div class="small-11 columns">
+                    <label for="es-site-form-proveedores-nombre">Nombre completo <small>Requerido</small>
+                      <input id="es-site-form-proveedores-nombre" type="text" placeholder="Ingrese su nombre completo" required pattern="alpha" />
+                    </label>
+                    <small class="error">Nombre no puede ser dejado en blanco</small>
+                  </div>
+                </div>
+
+                <!-- <div class="row">
+                  <div class="small-11 columns">
+                    <label for="es-site-form-proveedores-apellido">Apellidos <small>Requerido</small>
+                      <input id="es-site-form-proveedores-apellido" type="text" placeholder="Ingrese sus apellidos" required pattern="alpha" />
+                    </label>
+                    <small class="error">Apellidos no puede ser dejado en blanco</small>
+                  </div>
+                </div> -->
+
+                <div class="row">
+                  <div class="small-11 columns">
+                    <label for="es-site-form-proveedores-cedula">
+                      <span data-tooltip class="item has-tip tip-top" title="Ingrese los once dígitos de la cédula. Los guiones se muestran automáticamente">Cédula <small>Requerido</small>
+                      </span>
+                      <input id="es-site-form-proveedores-cedula" type="number" placeholder="Ingrese los once (11) dígitos de la cédula" required pattern="number" />
+                    </label>
+                    <small class="error">Cédula no puede ser dejado en blanco</small>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-11 columns">
+                    <label for="es-site-form-proveedores-correo">
+                      <span data-tooltip class="item has-tip tip-top" title="Indique una cuenta de correo electrónico activa. Para completar el proceso de inscripción deberá responder un correo electrónico que se enviará a esta cuenta">Correo Electrónico <small>Requerido</small>
+                      </span>
+                      <input id="es-site-form-proveedores-correo" type="email" placeholder="Ingrese una cuenta de correo electrónico activa" required pattern="email" />
+                    </label>
+                    <small class="error">Correo Electrónico no es valido</small>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-11 columns">
+                    <label for="es-site-form-proveedores-correo-confirmar">
+                      <span data-tooltip class="item has-tip tip-top" title="Indique una cuenta de correo electrónico activa. Para completar el proceso de inscripción deberá responder un correo electrónico que se enviará a esta cuenta">Confirmar Correo Electrónico <small>Requerido</small>
+                      </span>
+                      <input id="es-site-form-proveedores-correo-confirmar" type="email" placeholder="Confirme su cuenta de correo electrónico activa" required pattern="email" data-equalto="es-site-form-proveedores-correo" />
+                    </label>
+                    <small class="error">Correo Electrónico no coincide</small>
+                  </div>
+                </div>
+
+              </fieldset>
+
+              <fieldset class="small-4 columns end">
+                <legend>Datos de la Empresa</legend>
+
+                <div class="row">
+                  <div class="small-11 columns">
+                    <label for="es-site-form-proveedores-empresa">Empresa completo <small>Requerido</small>
+                      <input id="es-site-form-proveedores-empresa" type="text" placeholder="Ingrese el nombre de su empresa" required pattern="alpha" />
+                    </label>
+                    <small class="error">Empresa no puede ser dejado en blanco</small>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-11 columns">
+                    <label for="es-site-form-proveedores-rnc">
+                      <span data-tooltip class="item has-tip tip-top" title="Ingrese los once dígitos de la RNC. Los guiones se muestran automáticamente">RNC <small>Requerido</small>
+                      </span>
+                      <input id="es-site-form-proveedores-rnc" type="number" placeholder="Ingrese el RNC" required pattern="number" />
+                    </label>
+                    <small class="error">RNC no puede ser dejado en blanco</small>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-11 columns">
+                    <label for="es-site-form-proveedores-telefono">
+                      <span data-tooltip class="item has-tip tip-top" title="Ingrese los diez dígitos de su teléfono, los guiones se muestran automáticamente">Teléfono <small>Requerido</small></span>
+                      <input id="es-site-form-proveedores-telefono" type="tel" placeholder="Ingrese los dígitos de su teléfono" required pattern="number" />
+                    </label>
+                    <small class="error">Teléfono no puede ser dejado en blanco</small>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-11 columns">
+                    <label for="es-site-form-proveedores-provincia">
+                      <span data-tooltip class="item has-tip tip-top" title="Ingrese la provincia donde esta localizado">Provincia <small>Requerido</small>
+                      </span>
+                      <input id="es-site-form-proveedores-provincia" type="text" placeholder="Ingrese la provincia" required pattern="alpha_numeric" />
+                    </label>
+                    <small class="error">Provincia no puede ser dejado en blanco</small>
+                  </div>
+                </div>
+
+                <!-- <div class="row">
+                  <div class="small-11 columns">
+                    <label for="es-site-form-proveedores-clave">
+                      <span data-tooltip class="item has-tip tip-top" title="La clave debe tener al menos 8 caracteres. Se permiten números, letras y caracteres especiales">Clave <small>Requerido</small>
+                      </span>
+                      <input id="es-site-form-proveedores-clave" type="password" placeholder="Ingrese la clave para la Oficina Virtual de Edesur" required pattern="alpha_numeric" />
+                    </label>
+                    <small class="error">Clave no puede ser dejado en blanco</small>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-11 columns">
+                    <label for="es-site-form-proveedores-clave-confirmar">
+                    <span data-tooltip class="item has-tip tip-top" title="La clave debe tener al menos 8 caracteres. Se permiten números, letras y caracteres especiales">Confirmar Clave <small>Requerido</small>
+                    </span>
+                      <input id="es-site-form-proveedores-clave-confirmar" type="password" placeholder="Confirme la clave para la Oficina Virtual de Edesur" required pattern="alpha_numeric" data-equalto="es-site-form-proveedores-clave"  />
+                    </label>
+                    <small class="error">Clave no coincide</small>
+                  </div>
+                </div> -->
+
+              </fieldset>
+
+              <fieldset class="small-4 columns">
+                <legend>Enviar Solicitud</legend>
+
+                <div class="row">
+                  <div class="small-11 columns">
+                    <p>Por favor, complete esta solicitud para recibir el formulario de registro & homologación de proveedores por correo electrónico.</p>
+                    <input class="button" type="submit" value="Enviar Solicitud" />
+                  </div>
+                </div>
+
+              </fieldset>
+
+            </div>
+
+            <!-- <fieldset class="small-4 columns">
+              <legend>Acuerdo de Servicio de la Oficina Virtual</legend>
+
+              <div class="row">
+                <div class="small-12 columns">
+                    <input class="button" type="submit" value="Enviar Solicitud" />
+                </div>
+              </div>
+
+            </fieldset> -->
+
+          </form>
+        </div>
+      </div>
+
+      <div class="es-site-nav-services small-12 columns">
+      <div class="row">
+        <div class="es-site-nav-service-single small-4 columns">
+          <div class="row">
+            <div class="small-4 columns">
+              <img src="images/es-site-app-icon-puntos-pago.png">
+            </div>
+            <div class="small-8 columns">
+              <h4><a href="">Puntos de pago</a></h4>
+              <p>Busca la Oficina Comercial o estafeta más cerca de ti.</p>
+            </div>
+          </div>
+        </div>
+        <div class="es-site-nav-service-single small-4 columns">
+          <div class="row">
+            <div class="small-4 columns">
+              <img src="images/es-site-app-icon-horario.png">
+            </div>
+            <div class="small-8 columns">
+              <h4><a href="">Horario de servicio</a></h4>
+              <p>Conoce el horario de nuestras oficinas comerciales y estafetas</p>
+            </div>
+          </div>
+        </div>
+        <div class="es-site-nav-service-single small-4 columns">
+          <div class="row">
+            <div class="small-4 columns">
+              <img src="images/es-site-app-icon-clima.png">
+            </div>
+            <div class="small-8 columns">
+              <h4><a href="">Estaciones Climáticas</a></h4>
+              <p>Enterate del pronóstico del tiempo en el área de concesión.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <footer class="es-site-footer small-12 columns">
+      <div class="row">
+        <div class="small-2 columns">
+          <h4><a href="">Servicios</a></h4>
+          <ul class="side-nav">
+            <li><a href="ov.html">Oficina Virtual</a></li>
+            <li><a href="#">Nuevo Contrato</a></li>
+            <li><a href="ov.html">Pago de Factura</a></li>
+            <li><a href="#">Puntos de pago</a></li>
+            <li><a href="#">Factura por E-mail</a></li>
+            <li><a href="#">Denuncias de Fraude</a></li>
+          </ul>
+        </div>
+
+        <div class="small-2 columns">
+          <h4><a href="">Transparencia</a></h4>
+          <ul class="side-nav">
+            <li><a href="#">Compras</a></li>
+            <li><a href="#">Licitaciones</a></li>
+            <li><a href="#">En Proceso</a></li>
+            <li><a href="#">Adjudicadas</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
+        <div class="small-2 columns">
+          <h4><a href="">Empresa</a></h4>
+          <ul class="side-nav">
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Estructura</a></li>
+            <li><a href="#">Consejo administrativo</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+          </ul>
+        </div>
+        <div class="small-6 columns">
+
+            <form class="es-site-footer-contact-form" action="#">
+              <div class="row">
+                <div class="es-site-contact-field-box medium-6 columns">
+
+                  <div class="es-site-contact-field large-12 columns">
+                    <label for="es-site-contact-input-fullname">Su nombre</label>
+                      <input id="es-site-contact-input-fullname" type="text" placeholder="" />
+                  </div>
+                  <div class="es-site-contact-field large-12 columns">
+                    <label for="es-site-contact-input-email">Su correo electrónico</label>
+                      <input id="es-site-contact-input-email" type="text" placeholder="" />
+                  </div>
+                  <div class="es-site-contact-field large-12 columns">
+                    <label for="es-site-contact-dropdown-select">¿Que le gustaría decirnos?
+                    <select id="es-site-contact-dropdown-select" class="es-site-contact-dropdown">
+                      <option value="Factura">Factura</option>
+                      <option value="Nuevo Contrato">Nuevo Contrato</option>
+                      <option value="Sugerencias">Sugerencias</option>
+                      <option value="Fraude">Fraude</option>
+                    </select>
+                    </label>
+                  </div>
+
+                </div>
+
+                <div class="es-site-contact-textarea-box medium-6 columns">
+                  <div class="es-site-contact-field large-12 columns">
+                    <label for="es-site-contact-textarea">Su Mensaje</label>
+                      <textarea id="es-site-contact-textarea" placeholder=""></textarea>
+                    <a href="#" class="es-site-contact-form-submit button right">Enviar</a>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+
+            <div id="es-site-footer-map-canvas" class="es-site-footer-map large-12 columns"></div>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- <div class="es-site-top-bar-social icon-bar vertical">
+      <a class="item">
+        <img src="images/es-site-social-icon-twitter.png">
+      </a>
+      <a class="item">
+        <img src="images/es-site-social-icon-facebook.png">
+
+      </a>
+      <a class="item">
+        <img src="images/es-site-social-icon-youtube.png">
+      </a>
+      <a class="item">
+        <img src="images/es-site-social-icon-pinterest.png">
+      </a>
+      <a class="item">
+        <img src="images/es-site-social-icon-foursquare.png">
+      </a>
+    </div> -->
+
+    <div id="esRegAcuerdo" class="es-site-masthead-modal es-site-masthead-modal-content reveal-modal medium" data-reveal>
+      <h3>Acuerdo de Servicio de la Oficina Virtual</h3>
+      <div class="es-site-masthead-modal-agreement small-12 columns">
+        <p>Banksy photo booth PBR, raw denim yr disrupt bespoke. Direct trade gentrify Portland fixie swag, crucifix retro ethical next level iPhone. You probably haven't heard of them before they sold out ennui, narwhal hella Williamsburg cred photo booth stumptown cornhole Brooklyn 3 wolf moon Pinterest. Normcore twee Wes Anderson Etsy. IPhone selfies chia shabby chic Cosby sweater readymade meggings. Keytar asymmetrical viral you probably haven't heard of them pug paleo. Small batch pickled Schlitz, keytar VHS selvage Blue Bottle.</p>
+
+        <p>Crucifix meggings ethnic artisan bespoke, Bushwick shabby chic 8-bit synth retro biodiesel banh mi. Portland flexitarian viral, asymmetrical chillwave put a bird on it bicycle rights. Drinking vinegar photo booth Kickstarter fap banh mi. Pop-up YOLO VHS scenester meh, fingerstache Vice wolf Odd Future forage Shoreditch Neutra salvia vinyl PBR&B. Mixtape next level tofu retro, Kickstarter banjo salvia fingerstache swag Tumblr paleo. Pug Williamsburg food truck semiotics, aesthetic mumblecore biodiesel fashion axe hashtag Pinterest authentic quinoa 8-bit American Apparel organic. Selfies Shoreditch yr try-hard, asymmetrical 8-bit Intelligentsia wayfarers VHS wolf quinoa XOXO hoodie YOLO.</p>
+
+        <p>Shoreditch small batch Echo Park, fingerstache vinyl chambray tofu. Butcher ethnic locavore, artisan Echo Park messenger bag McSweeney's selfies deep v Williamsburg Tonx. Cosby sweater fixie whatever, Shoreditch trust fund gastropub Odd Future freegan chambray bicycle rights. YOLO seitan art party disrupt, Vice DIY pour-over post-ironic kale chips pop-up church-key small batch sriracha. Etsy fixie XOXO, PBR&B actually Shoreditch fingerstache deep v lo-fi single-origin coffee literally fanny pack. 3 wolf moon pork belly bespoke try-hard jean shorts before they sold out. Thundercats flexitarian Blue Bottle artisan 8-bit.</p>
+
+        <p>Put a bird on it before they sold out fixie gastropub, whatever drinking vinegar slow-carb asymmetrical. Meh wayfarers twee chillwave mlkshk, lomo viral Cosby sweater biodiesel. Beard keytar normcore Carles gentrify Schlitz, locavore stumptown typewriter distillery sustainable master cleanse squid disrupt keffiyeh. Before they sold out Shoreditch selvage deep v. VHS bitters biodiesel dreamcatcher fap, PBR&B Cosby sweater Helvetica synth Austin sriracha. VHS asymmetrical readymade sriracha before they sold out, cray narwhal. Salvia Marfa blog, food truck cardigan meh banh mi.</p>
+
+        <p>Direct trade blog before they sold out, messenger bag literally put a bird on it distillery scenester next level Brooklyn selfies sriracha master cleanse. Paleo tofu umami, flannel four loko brunch Wes Anderson Echo Park pork belly High Life Kickstarter VHS banh mi. Mustache organic church-key, PBR bicycle rights Schlitz gluten-free Pitchfork viral before they sold out. Literally cray sriracha mumblecore viral, fixie chillwave Tumblr tousled. High Life fap VHS four loko, food truck Austin blog tote bag meggings Godard photo booth. Aesthetic Echo Park DIY, paleo McSweeney's messenger bag squid chillwave cred fingerstache Truffaut 90's kitsch Bushwick raw denim. Tonx retro distillery Tumblr, salvia ennui keffiyeh food truck ethnic shabby chic tousled next level.</p>
+
+        <p>Chillwave fap Kickstarter, Carles photo booth blog dreamcatcher keytar tattooed irony direct trade. Intelligentsia fashion axe retro ethical, meh yr typewriter deep v cornhole craft beer pour-over crucifix you probably haven't heard of them keffiyeh. Thundercats tofu cred cardigan High Life Wes Anderson. Selvage shabby chic meh retro beard. American Apparel Tumblr Williamsburg, sustainable semiotics 8-bit Thundercats vegan Etsy disrupt PBR sartorial. Organic plaid stumptown trust fund asymmetrical artisan. Fingerstache YOLO freegan, master cleanse pork belly chambray tofu food truck narwhal scenester forage church-key sriracha Pinterest Wes Anderson.</p>
+      </div>
+      <a href="" class="es-site-masthead-modal-button es-site-masthead-modal-button-agreement button">He leído y aceptado el Acuerdo de Servicio</a>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53e919531b032162"></script>
+    <script src="js/es.js"></script>
+  </body>
+</html>

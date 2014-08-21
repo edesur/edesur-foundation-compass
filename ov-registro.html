@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edesur Dominicana</title>
+    <title>Registro de Nuevo Usuario |  Oficina Virtual | Edesur Dominicana</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
   </head>
   <body>
 
@@ -58,18 +58,92 @@
     </div>
 
     <section class="es-site-masthead small-12 columns">
+      <div class="row collapse">
+        <div class="es-site-masthead-title small-12 columns">
+          <h2>Oficina Virtual</h2>
+        </div>
+      </div>
 
       <div class="row">
-        <div class="es-site-masthead-title small-6 columns">
-          <h2>Vive la experiencia</h2>
-            <div class="row">
-              <div class="small-8 columns">
-                <h3 class="subheader">Todos los servicios al alcance de un click</h3>
+        <div class="es-site-masthead-form small-12 columns">
+          <div class="row">
+            <div class="es-site-masthead-form-title small-12 columns">
+              <h3>Registro de nuevo usuario</h3>
+
+              <div class="row">
+                <div class="es-site-masthead-form-progress small-2 columns">
+
+                  <div class="progress large round">
+                    <span class="meter" style="width: 50%"></span>
+                  </div>
+                </div>
+
+                <div class="es-site-masthead-form-progress-step small-1 columns end">
+                  <p>Paso 1 de 2</p>
+                </div>
               </div>
             </div>
-          <a href="ov.html" class="button">Oficina Virtual</a>
+          </div>
+          <form action="#" data-abide>
+            <div class="row">
+              <fieldset class="small-4 columns">
+                <div class="row">
+                  <div class="small-12 columns">
+
+                    <legend>Ingrese los datos desde su factura:</legend>
+
+                    <label for="es-site-form-reg-ref-pay">Referencia de Pago
+                      <small>Requerido</small>
+                      <input id="es-site-form-reg-ref-pay" type="number" placeholder="Coloque este dato tal cual aparece en su factura" required pattern="number" />
+                    </label>
+                    <small class="error">Referencia de Pago no puede ser dejado en blanco</small>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-12 columns">
+                    <label for="es-site-form-reg-ref-date">Fecha de emisión <small>Requerido</small>
+                      <input id="es-site-form-reg-ref-date" type="date" min="2012-01-01" max="2014-12-31" required pattern="date" />
+                    </label>
+                    <small class="error">Fecha de emisión no puede ser dejado en blanco</small>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-12 columns">
+                    <label for="es-site-form-reg-ref-nic">NIC <small>Requerido</small>
+                      <input id="es-site-form-reg-ref-nic" type="text" placeholder="Indique los siete números del NIC" required pattern="number" minlegth="7" maxlength="7" />
+                    </label>
+                    <small class="error">NIC no puede ser dejado en blanco</small>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="small-12 columns">
+                      <!-- <input class="button" type="submit" value="Verificar Datos" /> -->
+                      <a href="ov-registro-form.html" class="button">Verificar Datos</a>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="small-8 columns">
+                <p>Tome cualquier factura física de su contrato y ubique la la referencia de pago , la fecha de emisión de la factura y el NIC,como se muestra en la imagen debajo:</p>
+
+                <div class="row">
+                  <div class="small-3 columns small-centered">
+                    <a href="" data-reveal-id="esRegFactura"><img src="images/registro-factura.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="small-12 columns">
+                <p>Requerimos estos datos para su seguridad. Así verificamos que sólo el usuario que recibe la factura del servicio de electricidad pueda inscribir el contrato que utiliza. Si su contrato es nuevo, por favor espere a la entrega de su primera factura o solicite un duplicado en cualquiera de nuestras oficinas comerciales.</p>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="small-1 columns"></div>
       </div>
 
       <div class="es-site-nav-bar-app-wrapper small-12 columns">
@@ -177,12 +251,12 @@
         </div>
         <div class="small-6 columns">
 
-            <form class="es-site-footer-contact-form" action="">
+            <form class="es-site-footer-contact-form" action="#">
               <div class="row">
                 <div class="es-site-contact-field-box medium-6 columns">
 
                   <div class="es-site-contact-field large-12 columns">
-                    <label for="es-site-contact-field-fullname">Su nombre</label>
+                    <label for="es-site-contact-input-fullname">Su nombre</label>
                       <input id="es-site-contact-input-fullname" type="text" placeholder="" />
                   </div>
                   <div class="es-site-contact-field large-12 columns">
@@ -237,6 +311,38 @@
         <img src="images/es-site-social-icon-foursquare.png">
       </a>
     </div> -->
+
+    <div id="esRegRequisitos" class="es-site-masthead-modal es-site-masthead-modal-content reveal-modal medium" data-reveal>
+      <div class="row">
+        <div class="small-12 columns">
+          <h2>Registro de nuevo usuario</h2>
+          <p>Crear su nuevo usuario para ingresar a la Oficina Virtual sólo le tomará unos pocos minutos, en dos pasos sencillos. Luego de creado, deberá responder una confirmación que enviaremos a su correo electrónico.</p>
+
+          <p>Para crear un nuevo usuario, lo único que usted necesita es:</p>
+
+          <ul>
+            <li>Tener a mano cualquier factura o duplicado de factura</li>
+            <li>Una cuenta de correo electrónico activa</li>
+          </ul>
+
+          <a href="" class="es-site-masthead-modal-button button">Tengo estos datos, proceder a la inscripción</a>
+        </div>
+      </div>
+
+      <a class="close-reveal-modal">&#215;</a>
+
+      <div class="row">
+        <div class="small-12 columns">
+          <p>Si su contrato es nuevo, por favor espere la entrega de la primera factura o solicite sin costo un duplicado personalmente en cualquiera de nuestras oficinas comerciales.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="esRegFactura" class="es-site-masthead-modal reveal-modal medium text-center" data-reveal>
+      <img src="images/registro-factura.jpg" alt="">
+
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>

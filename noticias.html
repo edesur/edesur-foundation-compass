@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edesur Dominicana</title>
+    <title>Noticias del Sector | Edesur Dominicana</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- <link rel="stylesheet" href="stylesheets/slick.css" /> -->
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
@@ -13,63 +14,56 @@
   <body>
 
     <div class="es-site-nav-top-wrapper contain-to-grid fixed columns">
-      <nav class="es-site-nav-top top-bar" data-topbar>
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="index.html" title="Edesur Dominicana">Edesur Dominicana</a></h1>
-          </li>
-           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
+          <nav class="es-site-nav-top top-bar" data-topbar>
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="index.html" title="Edesur Dominicana">Edesur Dominicana</a></h1>
+              </li>
+               <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
 
-        <section class="top-bar-section">
-          <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="has-dropdown">
-              <a href="#">Servicios</a>
-              <ul class="dropdown">
-                <li><a href="#">Servicio al Cliente</a></li>
-                <li><a href="ov.html">Servicios en Linea</a></li>
-                <li><a href="#">Puntos de pago</a></li>
+            <section class="top-bar-section">
+              <!-- Right Nav Section -->
+              <ul class="right">
+                <li class="has-dropdown">
+                  <a href="#">Servicios</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Servicio al Cliente</a></li>
+                    <li><a href="ov.html">Servicios en Linea</a></li>
+                    <li><a href="#">Puntos de pago</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Transparencia</a></li>
+                <li><a href="#">Preguntas</a></li>
+                <li><a href="#">Empresa</a></li>
+                <li class="es-site-nav-search-wrapper has-form">
+                  <div class="es-site-nav-search row collapse">
+                    <div class="es-site-nav-search-input large-9 small-9 columns">
+                      <input class="right" type="text" placeholder="Buscar en Edesur">
+                    </div>
+                    <div class="large-3 small-3 columns">
+                      <a href="#" class="button expand">
+                        <i class="step fi-magnifying-glass size-72"></i>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                  <div class="addthis_horizontal_follow_toolbox"></div>
+                </li>
               </ul>
-            </li>
-            <li><a href="#">Transparencia</a></li>
-            <li><a href="#">Preguntas</a></li>
-            <li><a href="#">Empresa</a></li>
-            <li class="es-site-nav-search-wrapper has-form">
-              <div class="es-site-nav-search row collapse">
-                <div class="es-site-nav-search-input large-9 small-9 columns">
-                  <input class="right" type="text" placeholder="Buscar en Edesur">
-                </div>
-                <div class="large-3 small-3 columns">
-                  <a href="#" class="button expand">
-                    <i class="step fi-magnifying-glass size-72"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <!-- Go to www.addthis.com/dashboard to customize your tools -->
-              <div class="addthis_horizontal_follow_toolbox"></div>
-            </li>
-          </ul>
-        </section>
-      </nav>
-    </div>
+            </section>
+          </nav>
+        </div>
 
     <section class="es-site-masthead small-12 columns">
 
       <div class="row">
-        <div class="es-site-masthead-title small-6 columns">
-          <h2>Vive la experiencia</h2>
-            <div class="row">
-              <div class="small-8 columns">
-                <h3 class="subheader">Todos los servicios al alcance de un click</h3>
-              </div>
-            </div>
-          <a href="ov.html" class="button">Oficina Virtual</a>
+        <div class="es-site-masthead-title es-site-masthead-title-article small-6 columns">
+          <h2>Noticias del Sector</h2>
         </div>
-        <div class="small-1 columns"></div>
       </div>
 
       <div class="es-site-nav-bar-app-wrapper small-12 columns">
@@ -102,8 +96,104 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="es-site-nav-services small-12 columns">
+    <section class="es-site-noticias small-12 medium-12 large-12 columns">
+
+      <div class="row">
+        <div class="es-site-noticias-articulos es-site-noticias-wrapper">
+          <article class="">
+            <div class="columns">
+              <a href="#"><img src="images/es-site-noticias-acuerdo-neiba.jpg" alt="Edesur reduce pérdidas en Los Alcarrizos y Pedro Brand"></a>
+              <h3><a href="#">EDESUR y la Coalición Neiba firman un acuerdo para mejorar el servicio</a></h3>
+              <p>Edesur Dominicana anunció un aumento de la cantidad de horas diarias de electricidad que ofrece a sus clientes y usuarios de Neiba.</p>
+            </div>
+          </article>
+          <article class="">
+            <div class="columns">
+              <a href="#"><img src="images/es-site-noticias-utiles-deportivos-sur.jpg" alt="Edesur ofrece orientaciones a clientes sobre áreas técnicas"></a>
+              <h3><a href="#">EDESUR obsequia útiles deportivos a clubes del Sur</a></h3>
+              <p>El administrador gerente general de Edesur Dominicana,  ingeniero Rubén Montás, inició en San Cristóbal y Haina la entrega de cientos artículos.</p>
+            </div>
+          </article>
+          <article class="">
+            <div class="columns">
+              <a href="#"><img src="images/es-site-noticias-rehab-redes-dn.jpg" alt=""></a>
+              <h3><a href="#">Edesur invertirá 121 millones en Rehabilitación de Redes en el Distrito Nacional</a></h3>
+              <p>Las brigadas de técnicos de Edesur Dominicana iniciaron los trabajos de rehabilitación del circuito MATA101, que abarca los sectores San José, San Juan y Enriquillo</p>
+            </div>
+          </article>
+
+          <article class="">
+            <div class="columns">
+              <a href="#"><img src="images/es-site-noticias-reduce-perdidas.jpg" alt="Edesur reduce pérdidas en Los Alcarrizos y Pedro Brand"></a>
+              <h3><a href="#">Edesur reduce pérdidas en Los Alcarrizos y Pedro Brand</a></h3>
+              <p>Edesur Dominicana redujo en 53 y 48% las pérdidas por facturación y cobro como resultado preliminar del proyecto de rehabilitación de redes.</p>
+            </div>
+          </article>
+          <article class="">
+            <div class="columns">
+              <a href="#"><img src="images/es-site-noticias-clientes-areas-tecnicas.jpg" alt="Edesur ofrece orientaciones a clientes sobre áreas técnicas"></a>
+              <h3><a href="#">Edesur ofrece orientaciones a clientes sobre áreas técnicas</a></h3>
+              <p>Edesur Dominicana ofreció a un grupo de clientes las explicaciones técnicas del funcionamiento de sus áreas administrativas.</p>
+            </div>
+          </article>
+          <article class="">
+            <div class="columns">
+              <a href="#"><img src="images/es-site-noticias-trabajos-sd-oeste.jpg" alt=""></a>
+              <h3><a href="#">Edesur realizará trabajos de mantenimiento en Santo Domingo Oeste</a></h3>
+              <p>Serán afectados con la suspensión los Girasoles I, II y III, Palma Real, Los Peralejos, Los Militares, Proyecto Fairbanks, Los Ángeles y Panca Dominicana.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="es-site-noticias-videos es-site-noticias-wrapper">
+        <h2><a href="#">Videos de Edesur</a></h2>
+          <article class="">
+            <div class="columns">
+              <a href="#"><img src="images/es-site-noticias-video-redes-independencia.jpg" alt=""></a>
+              <h3><a href="#">Edesur rehabilita redes en barrios Avenida Independencia</a></h3>
+            </div>
+          </article>
+          <article class="">
+            <div class="columns">
+              <a href="#"><img src="images/es-site-noticias-video-circuito-24.jpg" alt=""></a>
+              <h3><a href="#">Edesur inaugura circuitos 24 horas</a></h3>
+            </div>
+          </article>
+          <article class="">
+            <div class="columns">
+              <a href="#"><img src="images/es-site-noticias-video-engombe-uasd.jpg" alt=""></a>
+              <h3><a href="#">Circuito 24 horas,Engombe UASD</a></h3>
+            </div>
+          </article>
+
+          <article class="">
+            <div class="columns">
+              <a href="#"><img src="images/es-site-noticias-video-los-coroneles.jpg" alt=""></a>
+              <h3><a href="#">Circuito 24 Horas, Los Coroneles de Herrera</a></h3>
+            </div>
+          </article>
+          <article class="">
+            <div class="columns">
+              <a href="#"><img src="images/es-site-noticias-video-desarrollo-gas.jpg" alt=""></a>
+              <h3><a href="#">Desarrollo del Gas en República Dominicana</a></h3>
+            </div>
+          </article>
+          <article class="">
+            <div class="columns">
+              <a href="#"><img src="images/es-site-noticias-video-marcelo-jorge.jpg" alt=""></a>
+              <h3><a href="#">Premios Energia 2014 reconoce a Marcelo Jorge</a></h3>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="es-site-nav-services small-12 columns">
       <div class="row">
         <div class="es-site-nav-service-single small-4 columns">
           <div class="row">
@@ -139,7 +229,6 @@
           </div>
         </div>
       </div>
-    </div>
     </section>
 
     <footer class="es-site-footer small-12 columns">
@@ -241,6 +330,7 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/slick.min.js"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53e919531b032162"></script>
     <script src="js/es.js"></script>

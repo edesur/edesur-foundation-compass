@@ -1,0 +1,202 @@
+.es-site-masthead, .es-site-masthead-modal {
+  h2, h3, h4, h5, p, ul, label, .subheader {
+    color: #fff;
+  }
+}
+
+.es-site-masthead {
+  background: url('images/es-site-home-masthead-bg.jpg') fixed center bottom no-repeat;
+  padding: 6rem 0 0;
+
+  @include background-size(cover);
+
+  h2, h3, h4, li, legend, .subheader {
+    @include text-shadow(rgba(#050505, 0.65) 4px 4px 4px);
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  input:not(.button) { background: rgba(255, 255, 255, 0.65); }
+  ::-webkit-input-placeholder {
+     color: $es-color-blue-alpha;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: $es-color-blue-alpha;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: $es-color-blue-alpha;
+  }
+
+  :-ms-input-placeholder {
+     color: $es-color-blue-alpha;
+  }
+
+  .subheader {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .has-tip {
+    border: none;
+  }
+  // .es-site-home-masthead-title { margin-bottom: 1rem; }
+
+  .es-site-masthead-title {
+
+    margin-bottom: 1rem;
+
+    h2 { margin: 0; }
+  }
+
+  .es-site-masthead-title.es-site-masthead-title-article {
+
+    margin: 4rem 0;
+  }
+
+  .es-site-home-masthead-text { margin-bottom: 2rem; }
+
+  .es-site-masthead-form, .es-site-masthead-details {
+    background: $es-color-blue-dark-alpha;
+  }
+
+  .es-site-masthead-form {
+    margin-bottom: 2rem;
+    padding: 1rem 1rem 0;
+
+    fieldset {
+      border: none;
+      margin: 0;
+
+      legend {
+        color: #fff;
+        font-size: 1.125rem;
+        margin: 0 0 1rem;
+      }
+
+      .has-tip {
+        color: #fff;
+        font-weight: normal;
+      }
+
+      .error .has-tip { color: #f04124; }
+    }
+
+    .alert-box.info .close { color: #aaa; }
+
+    .es-site-masthead-form-login {
+      legend { font-size: 1.5rem; }
+    }
+
+    .es-site-masthead-form-title {
+      margin-bottom: 1rem;
+
+      .es-site-masthead-form-progress {
+        .progress, { margin: 0; }
+      }
+
+      .es-site-masthead-form-progress-step {
+        p {
+          font-size: 0.75rem;
+          line-height: 1.5625rem;
+          margin: 0;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .es-site-masthead-form-title-alert {
+    margin: 0;
+    padding: 0 0.875rem;
+    height: 1.5625rem;
+    line-height: 1.4rem;
+
+    .close { padding: 11px 6px 2px; }
+  }
+
+  .es-site-nav-bar-app-wrapper {
+    background: $es-color-blue-dark-alpha;
+    padding: 0;
+  }
+
+  .es-site-nav-bar-app {
+    background: rgba(#000, 0);
+    padding: 0;
+  }
+
+  .es-site-nav-bar-app > * {
+      padding: 1rem 3.5rem;
+
+      img {
+        width: 3rem;
+        height: 3rem;
+        opacity: 0.75;
+      }
+
+      h5 {
+        font-size: 1rem;
+        line-height: 1.2;
+      }
+  }
+
+  .es-site-nav-bar-app > *:hover {
+    background: none;
+
+    h5 {
+      color: $primary-color;
+    }
+  }
+
+  .es-site-nav-services {
+    background: $es-color-blue-alpha;
+  }
+}
+
+.es-site-masthead-modal {
+  background: $es-color-blue-darker-alpha;
+
+  .es-site-masthead-modal-agreement {
+    background: rgba(255,255,255, 0.95);
+    height: 30rem;
+    overflow: auto;
+    padding: 2rem 1rem;
+
+    p {
+      color: #222;
+    }
+  }
+
+  .es-site-masthead-modal-button-agreement {
+    margin-top: 2rem;
+  }
+}
+
+.es-site-nav-services {
+  background: $es-color-blue;
+  padding: 1rem;
+
+  h4 a, p {
+    color: #fff;
+  }
+
+  h4 a {
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    @include text-shadow(rgba(#050505, 0.65) 4px 4px 4px);
+  }
+
+  .es-site-nav-service-single {
+    border-right: 1px solid rgba(255,255,255, 0.5);
+  }
+
+  .es-site-nav-service-single:last-child { border-right: none; }
+}
+

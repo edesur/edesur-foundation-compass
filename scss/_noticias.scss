@@ -1,0 +1,92 @@
+.es-site-noticias-videos {
+  a {
+    border-bottom: 1px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    color: $es-color-blue;
+    padding-bottom: 2px;
+  }
+  a:hover {
+
+    border-bottom-color: $es-color-blue;
+    color: scale-color($es-color-blue, $lightness: 15%);
+  }
+}
+
+.es-site-noticias, .es-site-noticias-articulo {
+  margin: 2rem 0;
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  h4 {
+    font-size: 1.0625rem;
+  }
+
+  a { border-bottom-color: transparent;  color: $es-color-blue; }
+  a:not(.th):hover {
+    border-bottom: 1px;
+    border-bottom-color: $es-color-blue;
+    border-bottom-style: solid;
+    color: scale-color($es-color-blue, $lightness: 15%);
+    padding-bottom: 2px;
+  }
+
+  a.at-share-btn:hover { border: none; }
+
+  .th { margin-bottom: 1.25rem; }
+
+  .es-site-noticias-wrapper {
+    h3, p,  img {
+      // padding: 0.5rem;
+    }
+  }
+}
+
+.es-site-masthead-noticias-articulo-titulo h2{
+  background: $es-color-blue-dark-alpha;
+  display: inline;
+  padding: 2.5px;
+}
+
+.es-site-noticias-articulo {
+
+  .es-site-noticias-video {
+
+  }
+
+  .es-site-noticias-video, .es-site-noticias-video-info {
+    margin-bottom: 2rem;
+  }
+
+  .es-site-noticias-video-casillas {
+    .es-site-video-casilla { margin: 0 0 2rem; }
+  }
+
+  .es-site-noticias-video-casillas, .es-site-noticias-relacionadas, .es-site-noticias-video-info, .es-site-section-wrapper {
+
+    h3 {
+      border-bottom: 3px solid $primary-color;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.25rem;
+
+      a:hover {
+        border: none;
+      }
+    }
+
+    .es-site-noticias-relacionadas-articulo {
+      border-bottom: 1px solid rgba(225, 225, 225, 0.9);
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+
+      h4 { margin: 0; }
+    }
+
+    .es-site-noticias-relacionadas-articulo:last-child {
+      border-bottom: none;
+    }
+  }
+}
