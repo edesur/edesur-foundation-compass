@@ -2,8 +2,6 @@ body {
   padding: 0;
 }
 
-p { letter-spacing: 0.02rem; }
-
 a,
 .es-site-nav-top {
   @include transition-property(color, border-color);
@@ -137,12 +135,11 @@ a,
 
   .es-site-section-wrapper-background {
     background: rgb(240,240,240);
-    margin-bottom: 2rem;
     padding: 2rem 1rem;
   }
 
-  .row:last-child .es-site-section-wrapper-background {
-    margin-bottom: 0;
+  .row:not(:last-child) .es-site-section-wrapper-background {
+    margin-bottom: 2rem;
   }
 }
 
@@ -165,6 +162,10 @@ a,
     counter-increment: list;
     font-weight: bold;
   }
+}
+
+.es-site-empresa-historia-images {
+  .th:not(:last-child) { margin-bottom: 1rem; }
 }
 
 .es-site-footer {

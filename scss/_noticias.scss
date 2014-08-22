@@ -47,7 +47,9 @@
 .es-site-masthead-noticias-articulo-titulo h2{
   background: $es-color-blue-dark-alpha;
   display: inline;
-  padding: 2.5px;
+  padding: 2.5px 0;
+
+  @include box-shadow($es-color-blue-dark-alpha 1rem 0 0, $es-color-blue-dark-alpha -1rem 0 0);
 }
 
 .es-site-noticias-articulo {

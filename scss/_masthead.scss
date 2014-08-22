@@ -193,10 +193,8 @@
     @include text-shadow(rgba(#050505, 0.65) 4px 4px 4px);
   }
 
-  .es-site-nav-service-single {
+  .es-site-nav-service-single:not(:last-child) {
     border-right: 1px solid rgba(255,255,255, 0.5);
   }
-
-  .es-site-nav-service-single:last-child { border-right: none; }
 }
 
