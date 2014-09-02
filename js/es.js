@@ -171,6 +171,63 @@ jQuery(document).ready(function($) {
   $es_site_file_icon_adobe_reader.css('line-height', $es_site_file_icon.outerHeight() + 'px');
   $es_site_file_adobe_reader_copy.css('margin', ($es_site_file_icon.outerHeight() - $es_site_file_adobe_reader_copy.outerHeight()) / 2 + 'px 0');
 
+  // Hide/Show Cédula and NIC form fields depending on selection
+  var $es_site_show_hide_contact_account_info = (function () {
+    var $es_site_contact_field_account_info = $S('.es-site-contact-field-account-info'),
+        $es_site_contact_field_acct_info_label = $es_site_contact_field_account_info.find('label'),
+        $es_site_contact_field_acct_info_input = $es_site_contact_field_account_info.find('input');;
+
+    $es_site_contact_field_account_info.hide();
+
+    $S('#es-site-contact-dropdown-select').on('change', function(event) {
+
+      var $this = $S(this),
+          $es_site_contact_option = $this.find('option:selected'),
+          $es_site_contact_option_selected = $es_site_contact_option.val();
+
+      switch($es_site_contact_option_selected) {
+        case 'facturacion':
+          $es_site_contact_field_account_info.show('slow');
+          $es_site_contact_field_account_info.find('input').attr('required', true);
+
+        break;
+
+        case 'solicitar-lectura':
+        console.log($this)
+          $es_site_contact_field_account_info.show('slow');
+          $es_site_contact_field_account_info.find('input').attr('required', true);
+
+        break;
+
+        case 'factura-email':
+          console.log($this)
+          $es_site_contact_field_account_info.show('slow');
+          $es_site_contact_field_account_info.find('input').attr('required', true);
+
+        break;
+
+        case 'cambio-titular':
+          console.log($this)
+          $es_site_contact_field_account_info.show('slow');
+          $es_site_contact_field_account_info.find('input').attr('required', true);
+
+        break;
+
+        case 'cambio-potencia':
+          console.log($this)
+          $es_site_contact_field_account_info.show('slow');
+          $es_site_contact_field_account_info.find('input').attr('required', true);
+
+        break;
+
+        default:
+          $es_site_contact_field_account_info.hide('slow');
+          $es_site_contact_field_account_info.find('input').removeAttr('required');
+        break;
+      }
+    });
+  })();
+
   // Footer Google Map
   var es_footer_map;
   var esLatLang = new google.maps.LatLng( 18.479330, -69.927836 );

@@ -217,40 +217,76 @@
         </div>
         <div class="small-6 columns">
 
-            <form class="es-site-footer-contact-form" action="">
-              <div class="row">
-                <div class="es-site-contact-field-box medium-6 columns">
+            <form class="es-site-footer-contact-form" action="#" data-abide>
 
-                  <div class="es-site-contact-field large-12 columns">
-                    <label for="es-site-contact-field-fullname">Su nombre</label>
-                      <input id="es-site-contact-input-fullname" type="text" placeholder="" />
-                  </div>
-                  <div class="es-site-contact-field large-12 columns">
-                    <label for="es-site-contact-input-email">Su correo electrónico</label>
-                      <input id="es-site-contact-input-email" type="text" placeholder="" />
-                  </div>
-                  <div class="es-site-contact-field large-12 columns">
-                    <label for="es-site-contact-dropdown-select">¿Que le gustaría decirnos?
-                    <select id="es-site-contact-dropdown-select" class="es-site-contact-dropdown">
-                      <option value="Factura">Factura</option>
-                      <option value="Nuevo Contrato">Nuevo Contrato</option>
-                      <option value="Sugerencias">Sugerencias</option>
-                      <option value="Fraude">Fraude</option>
+              <div class="row">
+                  <div class="es-site-contact-field large-6 columns">
+                    <label for="es-site-contact-dropdown-select">¿Que le gustaría decirnos? <small>Requerido</small>
+                    <select id="es-site-contact-dropdown-select" class="es-site-contact-dropdown" required>
+                      <option value>Selecione un opción</option>
+                      <option value="facturacion">Facturación</option>
+                      <option value="solicitar-lectura">Solicitar lectura</option>
+                      <option value="factura-email">Factura por email&nbsp;</option>
+                      <option value="cambio-titular">Cambio de titular</option>
+                      <option value="cambio-potencia">Cambio de potencia</option>
+                      <option value="oficina-virtual">Oficina Virtual</option>
+                      <option value="nuevo-contrato">Nuevo contrato</option>
+                      <option value="nuestro-servicio">Nuestro Servicio</option>
+                      <option value="fraude">Fraude</option>
+                      <option value="reportar-contratista">Reportar contratista</option>
+                      <option value="reportar-empleado">Reportar empleado</option>
+                      <option value="sugerencias">Sugerencias</option>
+                      <option value="sitio-web">Sitio web</option>
+                      <option value="otros">Otros</option>
                     </select>
                     </label>
+                    <small class="error">Es necesario seleccionar una opción</small>
                   </div>
 
-                </div>
-
-                <div class="es-site-contact-textarea-box medium-6 columns">
-                  <div class="es-site-contact-field large-12 columns">
-                    <label for="es-site-contact-textarea">Su Mensaje</label>
-                      <textarea id="es-site-contact-textarea" placeholder=""></textarea>
-                    <a href="#" class="es-site-contact-form-submit button right">Enviar</a>
+                  <div class="es-site-contact-field large-6 columns">
+                    <label for="es-site-contact-input-email">Su correo electrónico <small>Requerido</small></label>
+                      <input id="es-site-contact-input-email" type="email" placeholder="" required pattern="email"/>
+                    </label>
+                    <small class="error">Correo Electrónico no es valido</small>
                   </div>
-                </div>
 
               </div>
+
+              <div class="row">
+                <div class="es-site-contact-field large-6 columns">
+                  <label for="es-site-contact-input-nombre">Nombre <small>Requerido</small></label>
+                    <input id="es-site-contact-input-nombre" type="text" placeholder="" required pattern="alpha"/>
+                    <small class="error">Nombre no puede ser dejado en blanco</small>
+                </div>
+                <div class="es-site-contact-field large-6 columns">
+                    <label for="es-site-contact-input-apellido">Apellidos <small>Requerido</small></label>
+                      <input id="es-site-contact-input-apellido" type="text" placeholder="" required pattern="alpha"/>
+                      <small class="error">Apellidos no puede ser dejado en blanco</small>
+                  </div>
+              </div>
+
+              <div class="es-site-contact-field-account-info row">
+                <div class="es-site-contact-field large-6 columns">
+                  <label for="es-site-contact-input-cedula">Cédula <small>Requerido</small></label>
+                    <input id="es-site-contact-input-cedula" type="number" placeholder=""  pattern="number"/>
+                </div>
+
+                <div class="es-site-contact-field large-6 columns">
+                  <label for="es-site-contact-input-nic">NIC <small>Requerido</small></label>
+                    <input id="es-site-contact-input-nic" type="number" placeholder=""  pattern="number"/>
+                </div>
+              </div>
+
+              <div class="row">
+
+                <div class="es-site-contact-field large-12 columns">
+                  <label for="es-site-contact-textarea">Su Mensaje <small>Requerido</small></label>
+                  <textarea id="es-site-contact-textarea" placeholder="" required pattern="alpha_numeric"></textarea>
+                  <small class="error">Mensaje no puede ser dejado en blanco</small>
+                  <button type="submit" class="es-site-contact-form-submit button right">Enviar</button>
+                </div>
+              </div>
+
             </form>
 
             <div id="es-site-footer-map-canvas" class="es-site-footer-map large-12 columns"></div>

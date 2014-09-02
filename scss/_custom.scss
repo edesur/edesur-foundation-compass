@@ -9,6 +9,19 @@ a,
   @include transition-timing-function(ease-in);
 }
 
+#{data('abide')} {
+  .error small.error, .error span.error, span.error, small.error {
+    // background: none;
+    // color: $alert-color;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+
+  .button[type=submit] {
+    margin-top: 1rem;
+  }
+}
+
 .es-site-nav-top-wrapper {
   z-index: 100050;
 
